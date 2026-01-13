@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Health Plus", "type": "Health", "premium": 12000, "duration": 1, "status": "Active" },
+  { "id": 2, "name": "Life Secure", "type": "Life", "premium": 9000, "duration": 10, "status": "Inactive" },
+  { "id": 3, "name": "Car Protect", "type": "Vehicle", "premium": 7000, "duration": 1, "status": "Active" },
+  { "id": 4, "name": "Family Health", "type": "Health", "premium": 15000, "duration": 2, "status": "Active" }
+]
