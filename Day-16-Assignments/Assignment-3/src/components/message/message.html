@@ -1,0 +1,16 @@
+<div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+  <h2 class="text-xl font-semibold text-gray-800 mb-4">Message Service</h2>
+
+  <input type="text" [(ngModel)]="message"
+    class="w-full p-2 border rounded mb-3"
+    placeholder="Enter message">
+
+  <button (click)="addMessage()"
+    class="px-4 py-2 bg-gray-800 text-white rounded">
+    Add Message
+  </button>
+
+  <ul class="mt-4 list-disc pl-5 text-gray-700">
+    <li *ngFor="let msg of messages">{{ msg }}</li>
+  </ul>
+</div>

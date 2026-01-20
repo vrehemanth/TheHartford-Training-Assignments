@@ -1,0 +1,32 @@
+<div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+  <h2 class="text-xl font-semibold text-gray-800 mb-4">Calculator Service</h2>
+
+  <input type="number" [(ngModel)]="a"
+    class="w-full mb-2 p-2 border rounded" placeholder="Number A">
+
+  <input type="number" [(ngModel)]="b"
+    class="w-full mb-4 p-2 border rounded" placeholder="Number B">
+
+  <div class="flex gap-3">
+    <button (click)="add()"
+      class="px-4 py-2 bg-gray-800 text-white rounded">Add</button>
+
+    <button (click)="subtract()"
+      class="px-4 py-2 bg-gray-800 text-white rounded">Subtract</button>
+
+    <button (click)="multiply()"
+      class="px-4 py-2 bg-gray-800 text-white rounded">Multiply</button>
+
+    <button (click)="divide()"
+      class="px-4 py-2 bg-gray-800 text-white rounded">Divide</button>
+
+    <button (click)="mod()"
+      class="px-4 py-2 bg-gray-800 text-white rounded">Mod</button>
+  </div>
+
+  @if(showResult){
+    <p class="mt-4 text-gray-700">
+        Result: {{a}} {{operation}} {{b}} = <strong>{{ result }}</strong>
+    </p>
+  }    
+</div>
