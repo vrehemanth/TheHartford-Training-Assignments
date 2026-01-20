@@ -1,0 +1,38 @@
+.welcome{
+    text-align: center;
+    color:#7a003c;
+    font-size: 36px;
+}
+
+.welcome-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  background-color: #ffffff;
+}
+
+/* LEFT TEXT */
+.banner-text {
+  max-width: 600px;
+}
+
+.banner-text h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  color: #7a003c; /* Hartford maroon */
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 24px;
+  line-height: 1.7;
+  color: #111;
+}
+
+/* RIGHT IMAGE */
+.banner-image img {
+  height: 100;
+  object-fit: contain;
+}

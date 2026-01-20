@@ -1,0 +1,19 @@
+.description-box {
+  background: #f6f2ed;          
+  text-align: center;
+  padding: 30px 20px;
+  margin: 20px 60px;
+}
+
+.description-box h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.description-box p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333;
+}

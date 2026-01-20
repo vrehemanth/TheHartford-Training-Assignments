@@ -1,0 +1,25 @@
+<p>products works!</p>
+<h1>{{tv}}</h1>
+<button>Button</button><br><br>
+<li>
+    <b>Product List:</b>
+    <ul>
+        @for (p of products; track p) {
+            <li>{{ p }}</li>
+    }
+    </ul> 
+    <ul>
+    <h2>This is from Parent</h2>
+  <li *ngFor="let product of products">
+    {{ product }}
+  </li>
+</ul>
+<p *ngIf="isEditable">Editing is enabled</p>
+</li>
+<ul>
+  <li *ngFor="let product of products">
+    {{ product }}
+    <button (click)="selectProduct(product)">Select</button>
+  </li>
+</ul>
+<ng-content></ng-content>

@@ -1,0 +1,96 @@
+.footer {
+  background-color: #faf7f4;
+  padding: 50px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.column h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.column p {
+  margin: 6px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background-color: #7a003c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.legal-links span:first-child {
+    margin-left: 200px;
+}
+
+.legal-links span {
+  margin-left: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.social-icons span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: invert(1); 
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand img {
+  height: 45px;
+}
+
+copyright {
+  font-size: 14px;
+}

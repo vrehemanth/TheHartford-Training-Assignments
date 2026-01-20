@@ -1,0 +1,15 @@
+<div class="cards-wrapper">
+  @for (item of insuranceList; track $index; let i = $index) {
+    <div class="card" [class.active]="selectedIndex === i"(click)="selectCard(i)">
+      <img [src]="item.img" alt="{{ item.name }}" />
+      <p>{{ item.name }}</p>
+
+      <div class="circle">
+        @if (selectedIndex === i) {
+          <span>✔</span>
+        }
+      </div>
+    </div>
+  }
+</div>
+<br>
