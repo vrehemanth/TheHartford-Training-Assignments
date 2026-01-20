@@ -1,0 +1,53 @@
+/* Universal Selector */
+*{
+    padding: 8px;
+}
+
+/* h2 */
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:darkgreen;
+    letter-spacing:2px;
+}
+
+/* Unordered List */
+ul{
+    background:#fafafa;
+    border-left:5px solid blue;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+/* Images */
+img{
+    border:3px solid black;
+    border-radius:10px;
+}
+
+/* Audio and Video */
+audio,video{
+    border:2px dashed red;
+    padding:5px;
+}
+
+/* Mark */
+mark{
+    background:yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:3px;
+}
+
+/* Buttons and Inputs */
+button,input[type=submit]{
+    background:blue;
+    color:white;
+    padding:7px 15px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+}
+
+/* Hover Effect */
+button:hover,input[type=submit]:hover{
+    background:red;
+}

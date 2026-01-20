@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <title>SmartCart Shopping</title>
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <!--  HEADER -->
+  <header class="sticky top-0 bg-white shadow">
+    <nav class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+      <img src="../assets/logo.png" class="h-10 w-auto" alt="Site logo">
+
+      <ul class="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 md:mt-0">
+        <li><a href="#home" class="hover:text-indigo-600 transition">Home</a></li>
+        <li><a href="#products" class="hover:text-indigo-600 transition">Products</a></li>
+        <li><a href="#stats" class="hover:text-indigo-600 transition">Stats</a></li>
+        <li><a href="#reviews" class="hover:text-indigo-600 transition">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  HERO SECTION  -->
+  <section id="home"
+    class="min-h-screen flex items-center justify-center text-center text-black px-6">
+    <div class="relative w-full h-[70vh] flex flex-col items-center justify-center">
+      <img src="../assets/istockphoto.jpeg" class="absolute mx-auto inset-0 mb-6 h-full w-full" alt="Shopping Image">
+      <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative text-center px-6">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 text-white">Smart Shopping Starts Here</h2>
+            <p class="max-w-xl mx-auto mb-8 text-lg text-gray-200">Discover quality products, unbeatable prices, and fast delivery — all in one place.</p>
+            <a href="#products"class="inline-block bg-green-400 text-black font-semibold px-8 py-3 rounded-full hover:bg-green-500 hover:scale-105 transition">Shop Now</a>
+  </div>
+
+</div>
+    </div>
+  </section>
+
+  <!--  PRODUCTS SECTION  -->
+  <section id="products" class="py-16 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product Card -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/head.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Wireless Headphones</h3>
+        <p class="text-sm text-gray-600 flex-grow">Crystal clear sound with noise cancellation.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹4,999</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/smart.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Smart Watch</h3>
+        <p class="text-sm text-gray-600 flex-grow">Track health, fitness, and notifications.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹6,999</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/speak.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Bluetooth Speaker</h3>
+        <p class="text-sm text-gray-600 flex-grow">Powerful bass in a compact design.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹3,499</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/bag.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Laptop Backpack</h3>
+        <p class="text-sm text-gray-600 flex-grow">Stylish, durable & water resistant.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹2,199</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/mouse.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Gaming Mouse</h3>
+        <p class="text-sm text-gray-600 flex-grow">High precision with RGB lighting.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹1,799</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-2 transition flex flex-col">
+        <img src="../assets/charger.jpeg" class="rounded mb-4 h-50 w-full" alt="">
+        <h3 class="font-semibold text-lg">Wireless Charger</h3>
+        <p class="text-sm text-gray-600 flex-grow">Fast charging with sleek design.</p>
+        <p class="font-bold text-indigo-600 mt-2">₹1,299</p>
+        <button class="mt-4 bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  STATS SECTION  -->
+  <section id="stats" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 text-center">
+      <div class="flex-1 bg-indigo-50 p-6 rounded-xl">
+        <h3 class="text-3xl font-bold text-indigo-600">50K+</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="flex-1 bg-indigo-50 p-6 rounded-xl">
+        <h3 class="text-3xl font-bold text-indigo-600">10K+</h3>
+        <p>Products</p>
+      </div>
+      <div class="flex-1 bg-indigo-50 p-6 rounded-xl">
+        <h3 class="text-3xl font-bold text-indigo-600">4.8★</h3>
+        <p>Average Rating</p>
+      </div>
+      <div class="flex-1 bg-indigo-50 p-6 rounded-xl">
+        <h3 class="text-3xl font-bold text-indigo-600">Worldwide</h3>
+        <p>Fast Delivery</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  REVIEWS SECTION  -->
+  <section id="reviews" class="py-16 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">What Customers Say</h2>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold">Amit Sharma</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Amazing product quality and super fast delivery!
+        </p>
+        <p class="mt-2 text-yellow-500">★★★★★</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold">Neha Verma</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Great prices and excellent customer support.
+        </p>
+        <p class="mt-2 text-yellow-500">★★★★☆</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="font-semibold">Rahul Mehta</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          ShopSphere has become my go-to shopping site.
+        </p>
+        <p class="mt-2 text-yellow-500">★★★★★</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  CONTACT SECTION  -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+
+    <form class="max-w-xl mx-auto space-y-6">
+      <div>
+        <label class="block mb-1">Full Name</label>
+        <input type="text" class="w-full border p-3 rounded focus:outline-indigo-600" />
+      </div>
+
+      <div>
+        <label class="block mb-1">Email</label>
+        <input type="email" class="w-full border p-3 rounded focus:outline-indigo-600" />
+      </div>
+
+      <div>
+        <label class="block mb-1">Message</label>
+        <textarea rows="4" class="w-full border p-3 rounded focus:outline-indigo-600"></textarea>
+      </div>
+
+      <button
+        class="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition">
+        Submit
+      </button>
+    </form>
+  </section>
+
+  <!--  FOOTER  -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>© 2026 ShopSphere. All rights reserved.</p>
+    <p class="text-sm text-gray-400 mt-1">This is a demo e-commerce landing page.</p>
+  </footer>
+
+</body>
+</html>

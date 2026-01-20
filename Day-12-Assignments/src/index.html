@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Insurance Policies</h2>
+
+    <!-- Task 1: Fetch Insurance Policies (Fetch + Async/Await) -->
+     <h3>Policies List</h3>
+    <button onclick="fetchPolicies()">Load Policies</button>
+    <div id="result-1"></div>
+
+    <!-- Task 2: Display Policies (Objects & Arrays) -->
+    <div id="policies"></div>
+
+    <!-- Task 3: Filter Policies (filter) -->
+    <h3>Filtered Policies</h3>
+    <button onclick="filterPolicies('Health')">Health</button>
+    <button onclick="filterPolicies('Life')">Life</button>
+    <button onclick="filterPolicies('Vehicle')">Vehicle</button>
+    <div id="filteredPolicies"></div>
+    <!-- Task 4: Calculate Total Premium (reduce) -->
+    <h3>Total Active Premium</h3>
+    <button onclick="totalPremium()">Total Active Premium</button>
+    <h3 id="result-2"></h3>
+
+    <!-- Task 5: Premium Discount Logic (map) -->
+    <h3>Premium After Discount</h3>
+    <button onclick="applyDiscount()">Apply Discount</button>
+    <div id="discountedPolicies"></div>
+
+    <!-- Task 6: Policy Approval Simulation (Callback + setTimeout) -->
+    <h3>Policy Approval Simulation</h3>
+    <input type="number" id="policyId" placeholder="Enter Policy ID">
+    <button onclick="requestApproval()">Approve Policy</button>
+
+    <!-- Task 7: Promise-based Policy Purchase -->
+    <h3>Promise-based Policy Purchase</h3>
+    <input type="number" id="policyId1" placeholder="Enter Policy ID">
+    <button onclick="buyPolicy()">Buy Policy</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
