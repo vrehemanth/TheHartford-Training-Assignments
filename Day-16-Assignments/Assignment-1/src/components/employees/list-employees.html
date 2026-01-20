@@ -1,0 +1,71 @@
+<div class="max-w-7xl mx-auto px-6 py-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    @for (employee of employees; track $index) {
+      <div class="flex flex-col bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+        <div class="w-full h-56 bg-gray-100 flex items-center justify-center">
+          <img
+            [src]="employee.photoPath || 'assets/default-user.png'"
+            alt="Employee photo"
+            class="h-full w-full object-contain"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="flex flex-col flex-1 p-5">
+          <h4 class="text-lg font-semibold text-gray-800 text-center mb-4">
+            {{ employee.name }}
+          </h4>
+
+          <div class="space-y-2 text-sm text-gray-700">
+            <div class="flex justify-between">
+              <span class="font-medium">Gender</span>
+              <span>{{ employee.gender }}</span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="font-medium">DOB</span>
+              <span>{{ employee.dateOfBirth | date:'mediumDate' }}</span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="font-medium">Contact</span>
+              <span>{{ employee.contactPreference }}</span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="font-medium">Phone</span>
+              <span>{{ employee.phoneNumber }}</span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="font-medium">Email</span>
+              <span class="truncate max-w-[160px] text-right">
+                {{ employee.email }}
+              </span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="font-medium">Department</span>
+              <span>{{ employee.department }}</span>
+            </div>
+
+            <div class="flex justify-between items-center pt-2">
+              <span class="font-medium">Status</span>
+              <span
+                class="px-3 py-1 rounded-full text-xs font-semibold"
+                [class.bg-green-100]="employee.isActive"
+                [class.text-green-700]="employee.isActive"
+                [class.bg-red-100]="!employee.isActive"
+                [class.text-red-700]="!employee.isActive"
+              >
+                {{ employee.isActive ? 'Active' : 'Inactive' }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    }
+  </div>
+</div>
