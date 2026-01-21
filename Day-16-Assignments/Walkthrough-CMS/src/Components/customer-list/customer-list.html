@@ -1,0 +1,39 @@
+<div class="min-h-screen bg-orange-100 p-8">
+  <h2 class="text-3xl font-extrabold mb-10 text-center text-gray-800 tracking-wide">
+    Customer Directory
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    @for (customer of customers; track $index){
+    <div
+      class="relative bg-white/90 backdrop-blur-md border border-gray-900 border-gray-200 
+             rounded-2xl p-6 shadow-md hover:shadow-2xl 
+             hover:-translate-y-1 transition-all duration-300">
+      
+      <span class="absolute top-0 left-0 w-full h-1 rounded-t-2xl"
+      ></span>
+
+      <h3 class="text-xl font-bold text-gray-900 mt-2">
+        {{ customer.name }}
+      </h3>
+
+      <div class="mt-4 space-y-2 text-sm">
+        <p class="flex items-center gap-2 text-gray-700">
+          <span class="text-indigo-600">✉</span>
+          {{ customer.email }}
+        </p>
+
+        <p class="flex items-center gap-2 text-gray-700">
+          <span class="text-emerald-600">☎</span>
+          {{ customer.phone }}
+        </p>
+
+        <p class="flex items-center gap-2 text-gray-600 pt-2 border-t">
+          <span class="text-rose-600">📍</span>
+          {{ customer.city }}
+        </p>
+      </div>
+    </div>
+    }
+  </div>
+</div>
