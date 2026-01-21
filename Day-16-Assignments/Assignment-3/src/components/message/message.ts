@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Message as MessageService } from '../../app/services/message';
@@ -13,13 +13,12 @@ export class Message {
   message = '';
   messages: string[] = [];
 
-  constructor(private msgService: MessageService) {
-    this.messages = this.msgService.getData();
-  }
+ private msgService = inject(MessageService);
 
   addMessage() {
     if (this.message.trim()) {
       this.msgService.addData(this.message);
+      this.messages = this.msgService.getData();
       this.message = '';
     }
   }

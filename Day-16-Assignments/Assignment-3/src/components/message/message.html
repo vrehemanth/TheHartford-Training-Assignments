@@ -11,6 +11,8 @@
   </button>
 
   <ul class="mt-4 list-disc pl-5 text-gray-700">
-    <li *ngFor="let msg of messages">{{ msg }}</li>
+    @for (msg of messages;track $index) {
+      <li>{{ msg }}</li>
+    }
   </ul>
 </div>
