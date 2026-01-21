@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../../app/models/employee.model';
-import { DatePipe } from '@angular/common';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-employees',
-  imports: [DatePipe,CommonModule],
+  imports: [CommonModule],
   templateUrl: './list-employees.html',
   styleUrl: './list-employees.css',
 })
