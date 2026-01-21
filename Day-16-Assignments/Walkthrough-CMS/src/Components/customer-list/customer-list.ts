@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
 import { CustomerRepository } from '../../app/repository/customer-repository';
 import { Customer } from '../../app/interface/customer';
 
@@ -9,9 +9,9 @@ import { Customer } from '../../app/interface/customer';
   styleUrl: './customer-list.css',
 })
 export class CustomerList {
-  customers: Customer[] = [];
- constructor(private customerRepo: CustomerRepository) { }
- ngOnInit(): void {
- this.customers = this.customerRepo.getCustomers();
- }
+  protected customerRepo = inject(CustomerRepository);
+  customers: Customer[] = this.getCustomers();
+  getCustomers(): Customer[] {
+    return this.customerRepo.getCustomers();
+  }
 }
