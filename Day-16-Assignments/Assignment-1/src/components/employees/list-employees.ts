@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list-employees.css',
 })
 
-export class ListEmployees implements OnInit {
+export class ListEmployees{
  employees: Employee[] = [
   {
     id: 1,
@@ -46,6 +46,4 @@ export class ListEmployees implements OnInit {
     photoPath: 'assets/Mark.png'
   },
   ];
-    ngOnInit() {
-    }
-  }  
+}  
