@@ -15,6 +15,7 @@ export class TodoListComponents implements OnInit {
   protected todoService = inject(TodoService);
   protected cdr = inject(ChangeDetectorRef);
   users: any[] = [];
+  
   userForm = {
     id: null,
     name: '',
@@ -54,7 +55,7 @@ export class TodoListComponents implements OnInit {
   }
 
   //Delete User
-  deleteUser(id: number) {
+  deleteUser(id: string) {
     this.todoService.deleteUser(id)
       .subscribe(() => this.loadUsers());
   }
