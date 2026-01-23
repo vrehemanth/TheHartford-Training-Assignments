@@ -4,7 +4,7 @@ import { Injectable,inject } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class TodoService {
+export class TodoService{
 
   protected http=inject(HttpClient);
   API='http://localhost:3000/user';

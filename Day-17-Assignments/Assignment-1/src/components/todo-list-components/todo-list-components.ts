@@ -68,5 +68,5 @@ export class TodoListComponents implements OnInit {
       age: '',
       city: '',
     };
-  }
+  };
 }
