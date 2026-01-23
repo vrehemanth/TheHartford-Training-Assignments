@@ -35,7 +35,6 @@ export class TodoListComponents implements OnInit {
       this.cdr.detectChanges();
     });
   }
-
   saveUser() {
     //Update User
     if(this.userForm.id){
@@ -43,7 +42,7 @@ export class TodoListComponents implements OnInit {
         .subscribe(() => this.loadUsers());
     }else{
       //Add User
-      const { id, ...newUser } = this.userForm; 
+      const newUser = { ...this.userForm};
       this.todoService.addUser(newUser)
         .subscribe(() => this.loadUsers());
     }
@@ -55,7 +54,7 @@ export class TodoListComponents implements OnInit {
   }
 
   //Delete User
-  deleteUser(id: string) {
+  deleteUser(id: number) {
     this.todoService.deleteUser(id)
       .subscribe(() => this.loadUsers());
   }

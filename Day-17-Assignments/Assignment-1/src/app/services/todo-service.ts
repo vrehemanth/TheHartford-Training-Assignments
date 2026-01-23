@@ -15,7 +15,7 @@ export class TodoService {
   }
 
   //Get User by ID
-  getTodoById(id: string) {
+  getTodoById(id: number) {
     return this.http.get<any>(`${this.API}/${id}`);
   }
   
@@ -25,12 +25,12 @@ export class TodoService {
   }
 
   //Update User
-  updateUser(id: string, user: any) {
+  updateUser(id: number, user: any) {
     return this.http.put(`${this.API}/${id}`, user);
   }
 
   //Delete User
-  deleteUser(id: string) {
+  deleteUser(id: number) {
     return this.http.delete(`${this.API}/${id}`);
   }
 }

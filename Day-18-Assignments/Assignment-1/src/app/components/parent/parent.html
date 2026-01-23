@@ -1,0 +1,3 @@
+<!-- <app-child messageFromParent="Hello Child">Hello</app-child> -->
+<app-child (dataChanged)="handleDataChange($event)"></app-child>
+<h2>Message from Child: {{ childMessage }}</h2>
