@@ -1,0 +1,39 @@
+<h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4 text-center">
+  Routing in Angular
+</h2>
+<br><br>
+<nav class="mb-6">
+  <ul class="flex gap-4">
+    <li>
+      <a
+        routerLink="/first-component"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        class="px-4 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition"
+        routerLinkActive="bg-blue-600 text-white"
+      >
+        First Component
+      </a>
+    </li>
+
+    <li>
+      <a
+        routerLink="/second-component"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        class="px-4 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-700 transition"
+        routerLinkActive="bg-blue-600 text-white" 
+      >
+        Second Component
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<hr class="border-gray-300 mb-6" />
+
+<app-test></app-test>
+
+<div class="mt-6 ml-4 p-4 border rounded-lg shadow-sm bg-gray-50">
+  <router-outlet />
+</div>
