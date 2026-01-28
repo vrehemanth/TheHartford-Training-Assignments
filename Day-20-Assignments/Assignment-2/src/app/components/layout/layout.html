@@ -1,0 +1,57 @@
+<nav class="bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex h-16 items-center justify-between">
+      
+      <!-- Logo -->
+      <a class="text-xl font-bold tracking-wide" href="javascript:void(0)">
+        Logo
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li>
+          <a routerLink="add-emp" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">
+            AddNew
+          </a>
+        </li>
+        <li>
+          <a routerLink="edit-emp" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">
+            Modify
+          </a>
+        </li>
+        <li>
+          <a routerLink="delete-emp" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">
+            DeleteEmp
+          </a>
+        </li>
+        <li>
+          <a routerLink="list-emp" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">
+            AllEmps
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="hidden md:flex items-center gap-4">
+        <span class="text-sm text-gray-300">
+          Hello {{ loggedUserData }}
+        </span>
+        <button type="button"
+          (click)="logOff()"
+          class="px-4 py-1.5 rounded-md bg-blue-600 hover:bg-blue-700 transition font-medium">
+          LogOff
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button (optional JS toggle) -->
+      <button class="md:hidden p-2 rounded hover:bg-gray-800" aria-label="Toggle Menu">
+        ☰
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="max-w-7xl mx-auto p-4">
+  <router-outlet></router-outlet>
+</div>
