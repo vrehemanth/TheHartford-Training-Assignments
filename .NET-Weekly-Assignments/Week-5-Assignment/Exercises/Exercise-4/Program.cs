@@ -73,8 +73,6 @@ namespace Exercise_4
             Console.WriteLine("├──────────────────────────────────────────────────────────┤");
             Console.WriteLine($"│ TOTAL AMOUNT      : Rs. {totalAmount,-33}│");
             Console.WriteLine("└──────────────────────────────────────────────────────────┘");
-
-
             Console.WriteLine();
         }
         static double CalculateBill(int units)
