@@ -8,10 +8,10 @@
     John is a good boxer and he wants to know under what category he should enrol his name.
     Can you please help him out?
 
-    Input Format:
+    Input Format :
     Input consists of an integer that corresponds to John's weight.
 
-    Output Format:
+    Output Format :
     Output consists of a string that corresponds to any of the category names listed above or “Invalid Input”.
     Print Invalid Input if the weight is negative or if the weight is greater than 120. 
 */
