@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./out-tsc/app",
+        "baseUrl": "./",
+        "paths": {
+            "rxjs": [
+                "./node_modules/rxjs"
+            ],
+            "rxjs/*": [
+                "./node_modules/rxjs/*"
+            ],
+            "@angular/*": [
+                "./node_modules/@angular/*"
+            ]
+        },
+        "types": []
+    },
+    "files": [
+        "src/main.ts"
+    ],
+    "include": [
+        "src/**/*.d.ts"
+    ]
+}

@@ -1,0 +1,1687 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@hartford.com",
+      "name": "Admin User",
+      "role": "admin",
+      "phone": "+1-800-HARTFORD",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "email": "agent@hartford.com",
+      "name": "John Agent",
+      "role": "agent",
+      "phone": "+1-555-0101",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "email": "emily.wilson@hartford.com",
+      "name": "Emily Wilson",
+      "role": "agent",
+      "phone": "+1-555-0201",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "email": "customer@example.com",
+      "name": "Sarah Customer",
+      "role": "customer",
+      "phone": "+1-555-0102",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "email": "shaikshaaz18@gmail.com",
+      "name": "Shaik Shaaz Hussain +91",
+      "role": "customer",
+      "phone": "965241730",
+      "createdAt": "2026-01-24T15:27:45.450Z",
+      "updatedAt": "2026-01-24T15:27:45.450Z",
+      "id": "OISmIOn"
+    },
+    {
+      "email": "shaikshaaz18@gmail.com",
+      "name": "Shaik Shaaz Hussain +91",
+      "role": "customer",
+      "phone": "965241730",
+      "createdAt": "2026-01-24T16:07:21.898Z",
+      "updatedAt": "2026-01-24T16:07:21.898Z",
+      "id": "o6VFI94"
+    },
+    {
+      "email": "bharth@gmail.com",
+      "name": "bharath",
+      "role": "customer",
+      "phone": "08125468831",
+      "createdAt": "2026-01-25T03:52:34.427Z",
+      "updatedAt": "2026-01-25T03:52:34.427Z",
+      "id": "zfb1ij9"
+    },
+    {
+      "email": "sasi@gmail.com",
+      "name": "sasi",
+      "role": "customer",
+      "phone": "08125468831",
+      "createdAt": "2026-01-26T11:40:52.958Z",
+      "updatedAt": "2026-01-26T11:40:52.958Z",
+      "id": "mraol3D"
+    },
+    {
+      "email": "srinidhi@gmail.com",
+      "name": "srinidhi",
+      "role": "customer",
+      "phone": "1234",
+      "createdAt": "2026-01-27T04:16:18.128Z",
+      "updatedAt": "2026-01-27T04:16:18.128Z",
+      "id": "YeMWJG_"
+    },
+    {
+      "email": "hemanth@gmail.com",
+      "name": "Hemanth Kumar Veeramachaneni",
+      "role": "customer",
+      "phone": "9020329840",
+      "createdAt": "2026-01-28T11:20:34.085Z",
+      "updatedAt": "2026-01-28T11:20:34.085Z",
+      "id": "5mtn9XD"
+    }
+  ],
+  "insuranceRequests": [
+    {
+      "id": "1",
+      "requestNumber": "REQ-2024-001",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "customerEmail": "customer@example.com",
+      "customerPhone": "+1-555-0102",
+      "insuranceType": "Health",
+      "status": "agent_assigned",
+      "agentId": "1",
+      "agentName": "John Agent",
+      "description": "Need comprehensive health insurance for family of 4",
+      "requestedCoverage": 500000,
+      "requestDate": "2024-01-20T10:00:00.000Z",
+      "updatedAt": "2026-01-24T16:09:10.973Z"
+    },
+    {
+      "id": "2",
+      "requestNumber": "REQ-2024-002",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "customerEmail": "customer@example.com",
+      "customerPhone": "+1-555-0102",
+      "insuranceType": "Auto",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "description": "Car insurance for new Honda Civic 2024",
+      "requestedCoverage": 25000,
+      "requestDate": "2024-01-18T14:30:00.000Z",
+      "updatedAt": "2026-01-26T09:29:05.128Z",
+      "selectedPolicy": {
+        "name": "Comprehensive",
+        "coverage": 500000,
+        "premium": 1200,
+        "features": [
+          "Own Damage",
+          "Third Party",
+          "Zero Depreciation",
+          "Roadside Assistance"
+        ],
+        "recommended": true
+      }
+    },
+    {
+      "requestNumber": "REQ-2026-4461",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "life",
+      "status": "agent_assigned",
+      "agentId": "1",
+      "agentName": "John Agent",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-24T16:16:42.909Z",
+      "description": "Request for Term Life Insurance",
+      "id": "dufzYdh",
+      "updatedAt": "2026-01-26T09:08:12.733Z"
+    },
+    {
+      "requestNumber": "REQ-2026-1195",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "auto",
+      "status": "pending_agent_assignment",
+      "agentId": null,
+      "agentName": null,
+      "requestedCoverage": 500000,
+      "requestDate": "2026-01-24T16:16:48.265Z",
+      "description": "Request for Comprehensive Car Insurance",
+      "id": "rFUZy5A"
+    },
+    {
+      "requestNumber": "REQ-2026-2203",
+      "customerId": "zfb1ij9",
+      "customerName": "bharath",
+      "insuranceType": "health",
+      "status": "agent_assigned",
+      "agentId": "1",
+      "agentName": "John Agent",
+      "requestedCoverage": 3100000,
+      "requestDate": "2026-01-25T03:52:43.760Z",
+      "description": "Request for Comprehensive Health Insurance",
+      "id": "F2lOKv6",
+      "updatedAt": "2026-01-25T03:53:16.656Z"
+    },
+    {
+      "requestNumber": "REQ-2026-6039",
+      "customerId": "zfb1ij9",
+      "customerName": "bharath",
+      "insuranceType": "health",
+      "status": "agent_assigned",
+      "agentId": "1",
+      "agentName": "John Agent",
+      "requestedCoverage": 55000000,
+      "requestDate": "2026-01-25T03:59:03.363Z",
+      "description": "Request for Critical Illness Insurance",
+      "id": "NpsahKs",
+      "updatedAt": "2026-01-25T03:59:23.601Z"
+    },
+    {
+      "requestNumber": "REQ-2026-2884",
+      "customerId": "OISmIOn",
+      "customerName": "Shaik Shaaz Hussain +91",
+      "insuranceType": "health",
+      "status": "agent_assigned",
+      "agentId": "1",
+      "agentName": "John Agent",
+      "requestedCoverage": 55000000,
+      "requestDate": "2026-01-25T12:58:07.198Z",
+      "description": "Request for Critical Illness Insurance",
+      "id": "qMMJsOe",
+      "updatedAt": "2026-01-25T12:58:28.011Z"
+    },
+    {
+      "requestNumber": "REQ-2026-7723",
+      "customerId": "OISmIOn",
+      "customerName": "Shaik Shaaz Hussain +91",
+      "insuranceType": "life",
+      "status": "application_in_progress",
+      "agentId": "4",
+      "agentName": "Emily Wilson",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-25T13:00:03.817Z",
+      "description": "Request for Term Life Insurance",
+      "id": "FnUSbjm",
+      "updatedAt": "2026-01-27T04:15:03.438Z"
+    },
+    {
+      "requestNumber": "REQ-2026-3087",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "health",
+      "status": "pending_agent_assignment",
+      "agentId": null,
+      "agentName": null,
+      "requestedCoverage": 3100000,
+      "requestDate": "2026-01-26T09:00:00.989Z",
+      "description": "Request for Comprehensive Health Insurance",
+      "id": "4D2Qy7y"
+    },
+    {
+      "requestNumber": "REQ-2026-609",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "life",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-26T09:07:50.363Z",
+      "description": "Request for Term Life Insurance",
+      "id": "q0GpOIy",
+      "updatedAt": "2026-01-26T09:29:47.392Z"
+    },
+    {
+      "requestNumber": "REQ-2026-5698",
+      "customerId": "mraol3D",
+      "customerName": "sasi",
+      "insuranceType": "life",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-26T11:41:01.524Z",
+      "description": "Request for Term Life Insurance",
+      "id": "je7QNsP",
+      "updatedAt": "2026-01-26T11:42:53.527Z"
+    },
+    {
+      "requestNumber": "REQ-2026-8656",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "auto",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 500000,
+      "requestDate": "2026-01-26T12:21:30.535Z",
+      "description": "Request for Comprehensive Car Insurance",
+      "id": "dfvagt-",
+      "updatedAt": "2026-01-27T04:11:56.311Z"
+    },
+    {
+      "requestNumber": "REQ-2026-5737",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "life",
+      "status": "under_admin_review",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-27T04:09:41.082Z",
+      "description": "Request for Term Life Insurance",
+      "id": "1yt32n2",
+      "updatedAt": "2026-01-28T11:29:26.629Z"
+    },
+    {
+      "requestNumber": "REQ-2026-1503",
+      "customerId": "YeMWJG_",
+      "customerName": "srinidhi",
+      "insuranceType": "health",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 22500000,
+      "requestDate": "2026-01-27T04:16:27.421Z",
+      "description": "Request for Senior Citizen Health Insurance",
+      "id": "cdQX1zV",
+      "updatedAt": "2026-01-27T04:20:33.518Z"
+    },
+    {
+      "requestNumber": "REQ-2026-7708",
+      "customerId": "YeMWJG_",
+      "customerName": "srinidhi",
+      "insuranceType": "life",
+      "status": "pending_agent_assignment",
+      "agentId": null,
+      "agentName": null,
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-27T04:18:37.437Z",
+      "description": "Request for Term Life Insurance",
+      "id": "yNP7TXc"
+    },
+    {
+      "requestNumber": "REQ-2026-9013",
+      "customerId": "YeMWJG_",
+      "customerName": "srinidhi",
+      "insuranceType": "auto",
+      "status": "pending_agent_assignment",
+      "agentId": null,
+      "agentName": null,
+      "requestedCoverage": 500000,
+      "requestDate": "2026-01-27T04:25:52.212Z",
+      "description": "Request for Comprehensive Car Insurance",
+      "id": "VlijhJE"
+    },
+    {
+      "requestNumber": "REQ-2026-6082",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "health",
+      "status": "under_admin_review",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 3100000,
+      "requestDate": "2026-01-27T06:59:08.072Z",
+      "description": "Request for Comprehensive Health Insurance",
+      "id": "fQjvDG_",
+      "updatedAt": "2026-01-27T07:00:22.549Z"
+    },
+    {
+      "requestNumber": "REQ-2026-241",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "insuranceType": "auto",
+      "status": "agent_assigned",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 500000,
+      "requestDate": "2026-01-28T10:05:01.740Z",
+      "description": "Request for Comprehensive Car Insurance",
+      "id": "zABSyzi",
+      "updatedAt": "2026-01-28T10:05:21.314Z"
+    },
+    {
+      "requestNumber": "REQ-2026-5330",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "insuranceType": "life",
+      "status": "application_in_progress",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 25200000,
+      "requestDate": "2026-01-28T11:20:45.530Z",
+      "description": "Request for Term Life Insurance",
+      "id": "ib0FUPP",
+      "updatedAt": "2026-01-28T17:40:21.161Z"
+    },
+    {
+      "requestNumber": "REQ-2026-8532",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "insuranceType": "health",
+      "status": "active",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 3100000,
+      "requestDate": "2026-01-28T11:22:06.295Z",
+      "description": "Request for Comprehensive Health Insurance",
+      "id": "d2cMDfQ",
+      "updatedAt": "2026-01-28T11:31:18.097Z"
+    },
+    {
+      "requestNumber": "REQ-2026-4057",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "insuranceType": "auto",
+      "status": "recommendations_sent",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "requestedCoverage": 500000,
+      "requestDate": "2026-01-28T17:39:16.858Z",
+      "description": "Request for Comprehensive Car Insurance",
+      "id": "7mpcilk",
+      "updatedAt": "2026-01-28T17:41:10.229Z"
+    }
+  ],
+  "policyRecommendations": [
+    {
+      "requestId": "2",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Third Party Only",
+          "coverage": 0,
+          "premium": 500,
+          "features": [
+            "Third Party Liability",
+            "Legal Cover"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Comprehensive",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Roadside Assistance"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Premium Comprehensive",
+          "coverage": 1000000,
+          "premium": 1800,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Engine Protection",
+            "NCB Protection",
+            "Roadside Assistance"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.This is a verified test message.",
+      "createdAt": "2026-01-25T10:37:25.286Z",
+      "id": 1
+    },
+    {
+      "requestId": "FnUSbjm",
+      "agentId": "4",
+      "agentName": "Emily Wilson",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": 5000000,
+          "premium": 800,
+          "features": [
+            "Life Cover",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-25T13:06:46.867Z",
+      "id": 2
+    },
+    {
+      "requestId": "FnUSbjm",
+      "agentId": "4",
+      "agentName": "Emily Wilson",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": -1,
+          "premium": 798,
+          "features": [
+            "Life Coverfdfs",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "",
+          "coverage": -2,
+          "premium": 0,
+          "features": [
+            ""
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.fdjatraw",
+      "createdAt": "2026-01-25T13:17:08.161Z",
+      "id": 3
+    },
+    {
+      "requestId": "q0GpOIy",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": 5000000,
+          "premium": 800,
+          "features": [
+            "Life Cover",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-26T09:11:30.855Z",
+      "id": 4
+    },
+    {
+      "requestId": "je7QNsP",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": 5000000,
+          "premium": 800,
+          "features": [
+            "Life Cover",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.this",
+      "createdAt": "2026-01-26T11:41:33.802Z",
+      "id": 5
+    },
+    {
+      "requestId": "dfvagt-",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Third Party Only",
+          "coverage": 0,
+          "premium": 500,
+          "features": [
+            "Third Party Liability",
+            "Legal Cover"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Comprehensive",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Roadside Assistance"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Premium Comprehensive",
+          "coverage": 1000000,
+          "premium": 1800,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Engine Protection",
+            "NCB Protection",
+            "Roadside Assistance"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.fna",
+      "createdAt": "2026-01-27T04:10:16.628Z",
+      "id": 6
+    },
+    {
+      "requestId": "cdQX1zV",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Basic Health Plan",
+          "coverage": 300000,
+          "premium": 800,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing after 2 years"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Premium Health Plan",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing covered",
+            "Maternity",
+            "Day Care"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Family Floater Plan",
+          "coverage": 1000000,
+          "premium": 2000,
+          "features": [
+            "Family Coverage",
+            "OPD",
+            "Hospitalization",
+            "Pre-existing",
+            "Maternity",
+            "Critical Illness"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-27T04:19:25.610Z",
+      "id": 7
+    },
+    {
+      "requestId": "fQjvDG_",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Basic Health Plan",
+          "coverage": 300000,
+          "premium": 800,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing after 2 years"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Premium Health Plan",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing covered",
+            "Maternity",
+            "Day Care"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Family Floater Plan",
+          "coverage": 1000000,
+          "premium": 2000,
+          "features": [
+            "Family Coverage",
+            "OPD",
+            "Hospitalization",
+            "Pre-existing",
+            "Maternity",
+            "Critical Illness"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-27T06:59:34.460Z",
+      "id": 8
+    },
+    {
+      "requestId": "1yt32n2",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": 5000000,
+          "premium": 800,
+          "features": [
+            "Life Cover",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-28T10:00:15.287Z",
+      "id": 9
+    },
+    {
+      "requestId": "ib0FUPP",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Term Life Basic",
+          "coverage": 2500000,
+          "premium": 500,
+          "features": [
+            "Pure Life Cover",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Term Life Plus",
+          "coverage": 5000000,
+          "premium": 800,
+          "features": [
+            "Life Cover",
+            "Accidental Death Benefit",
+            "Tax Benefits",
+            "30 Year Term"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Whole Life Plan",
+          "coverage": 10000000,
+          "premium": 1500,
+          "features": [
+            "Lifetime Cover",
+            "Maturity Benefit",
+            "Accidental Death",
+            "Tax Benefits"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-28T11:21:38.575Z",
+      "id": 10
+    },
+    {
+      "requestId": "d2cMDfQ",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Basic Health Plan",
+          "coverage": 300000,
+          "premium": 800,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing after 2 years"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Premium Health Plan",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "OPD Coverage",
+            "Hospitalization",
+            "Pre-existing covered",
+            "Maternity",
+            "Day Care"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Family Floater Plan",
+          "coverage": 1000000,
+          "premium": 2000,
+          "features": [
+            "Family Coverage",
+            "OPD",
+            "Hospitalization",
+            "Pre-existing",
+            "Maternity",
+            "Critical Illness"
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-28T11:23:08.635Z",
+      "id": 11
+    },
+    {
+      "requestId": "7mpcilk",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "packages": [
+        {
+          "name": "Third Party Only",
+          "coverage": 0,
+          "premium": 500,
+          "features": [
+            "Third Party Liability",
+            "Legal Cover"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "Comprehensive",
+          "coverage": 500000,
+          "premium": 1200,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Roadside Assistance"
+          ],
+          "recommended": true
+        },
+        {
+          "name": "Premium Comprehensive",
+          "coverage": 1000000,
+          "premium": 1800,
+          "features": [
+            "Own Damage",
+            "Third Party",
+            "Zero Depreciation",
+            "Engine Protection",
+            "NCB Protection",
+            "Roadside Assistance"
+          ],
+          "recommended": false
+        },
+        {
+          "name": "",
+          "coverage": 0,
+          "premium": 0,
+          "features": [
+            ""
+          ],
+          "recommended": false
+        }
+      ],
+      "notes": "Based on your requirements, I have prepared the following policy recommendations.",
+      "createdAt": "2026-01-28T17:41:10.208Z",
+      "id": 12
+    }
+  ],
+  "policyApplications": [
+    {
+      "id": "1",
+      "applicationNumber": "APP-2024-001",
+      "requestId": "2",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "Auto",
+      "status": "approved",
+      "recommendedPlan": "Comprehensive Auto Coverage",
+      "coverageAmount": 25000,
+      "premium": 120,
+      "documents": [
+        "driving_license.pdf",
+        "vehicle_registration.pdf",
+        "previous_insurance.pdf"
+      ],
+      "agentNotes": "Customer has clean driving record. Recommended comprehensive coverage with zero depreciation.",
+      "submittedDate": "2024-01-22T11:00:00.000Z",
+      "updatedAt": "2024-01-22T11:00:00.000Z",
+      "adminNotes": "",
+      "approvedDate": "2026-01-26T09:29:05.120Z"
+    },
+    {
+      "applicationNumber": "APP-2026-7574",
+      "requestId": "q0GpOIy",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "life",
+      "packageName": "Term Life Plus",
+      "premium": 800,
+      "coverageAmount": 5000000,
+      "status": "approved",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-26T09:28:38.472Z",
+      "updatedAt": "2026-01-26T09:29:32.178Z",
+      "id": "Z-R3l1L",
+      "agentNotes": "",
+      "agentVerifiedAt": "2026-01-26T09:29:32.178Z",
+      "adminNotes": "",
+      "approvedDate": "2026-01-26T09:29:47.384Z"
+    },
+    {
+      "applicationNumber": "APP-2026-1211",
+      "requestId": "je7QNsP",
+      "customerId": "mraol3D",
+      "customerName": "sasi",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "life",
+      "packageName": "Term Life Basic",
+      "premium": 500,
+      "coverageAmount": 2500000,
+      "status": "approved",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-26T11:42:09.833Z",
+      "updatedAt": "2026-01-26T11:42:35.607Z",
+      "id": "vD2skYU",
+      "agentNotes": "this is sasi poliy",
+      "agentVerifiedAt": "2026-01-26T11:42:35.607Z",
+      "adminNotes": "sasi policy is reviewed",
+      "approvedDate": "2026-01-26T11:42:53.510Z"
+    },
+    {
+      "applicationNumber": "APP-2026-9407",
+      "requestId": "dfvagt-",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "auto",
+      "packageName": "Comprehensive",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "status": "approved",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-27T04:11:24.758Z",
+      "updatedAt": "2026-01-27T04:11:42.332Z",
+      "id": "gEWdg9k",
+      "agentNotes": "",
+      "agentVerifiedAt": "2026-01-27T04:11:42.332Z",
+      "adminNotes": "",
+      "approvedDate": "2026-01-27T04:11:56.304Z"
+    },
+    {
+      "applicationNumber": "APP-2026-2309",
+      "requestId": "FnUSbjm",
+      "customerId": "OISmIOn",
+      "customerName": "Shaik Shaaz Hussain +91",
+      "agentId": "4",
+      "agentName": "Emily Wilson",
+      "insuranceType": "life",
+      "packageName": "Term Life Plus",
+      "premium": 798,
+      "coverageAmount": -1,
+      "status": "submitted_to_agent",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-27T04:15:03.426Z",
+      "updatedAt": "2026-01-27T04:15:03.426Z",
+      "id": "_4twqyI"
+    },
+    {
+      "applicationNumber": "APP-2026-6411",
+      "requestId": "cdQX1zV",
+      "customerId": "YeMWJG_",
+      "customerName": "srinidhi",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "health",
+      "packageName": "Premium Health Plan",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "status": "approved",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-27T04:19:57.786Z",
+      "updatedAt": "2026-01-27T04:20:15.353Z",
+      "id": "b5QjEmk",
+      "agentNotes": "srinid 101",
+      "agentVerifiedAt": "2026-01-27T04:20:15.353Z",
+      "adminNotes": "done srini",
+      "approvedDate": "2026-01-27T04:20:33.512Z"
+    },
+    {
+      "applicationNumber": "APP-2026-6479",
+      "requestId": "fQjvDG_",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "health",
+      "packageName": "Premium Health Plan",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "status": "approved",
+      "documents": [
+        "Screenshot 2026-01-26 at 1.18.08 PM.png"
+      ],
+      "submittedDate": "2026-01-27T06:59:58.169Z",
+      "updatedAt": "2026-01-27T07:00:22.530Z",
+      "id": "6SSoEYQ",
+      "agentNotes": "",
+      "agentVerifiedAt": "2026-01-27T07:00:22.530Z",
+      "adminNotes": "102",
+      "approvedDate": "2026-01-27T07:00:38.076Z"
+    },
+    {
+      "applicationNumber": "APP-2026-1637",
+      "requestId": "1yt32n2",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "life",
+      "packageName": "Term Life Plus",
+      "premium": 800,
+      "coverageAmount": 5000000,
+      "status": "submitted_to_admin",
+      "documents": [
+        "RoutingRefDoc.pdf"
+      ],
+      "submittedDate": "2026-01-28T10:04:22.334Z",
+      "updatedAt": "2026-01-28T11:29:26.595Z",
+      "id": "5i4r_eu",
+      "agentNotes": "",
+      "agentVerifiedAt": "2026-01-28T11:29:26.595Z"
+    },
+    {
+      "applicationNumber": "APP-2026-1038",
+      "requestId": "d2cMDfQ",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "health",
+      "packageName": "Premium Health Plan",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "status": "approved",
+      "documents": [
+        "RoutingRefDoc.pdf"
+      ],
+      "submittedDate": "2026-01-28T11:23:33.036Z",
+      "updatedAt": "2026-01-28T11:28:42.477Z",
+      "id": "hCgiuxt",
+      "agentNotes": "",
+      "agentVerifiedAt": "2026-01-28T11:28:42.476Z",
+      "adminNotes": "",
+      "approvedDate": "2026-01-28T11:31:18.081Z"
+    },
+    {
+      "applicationNumber": "APP-2026-8682",
+      "requestId": "ib0FUPP",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "insuranceType": "life",
+      "packageName": "Term Life Plus",
+      "premium": 800,
+      "coverageAmount": 5000000,
+      "status": "submitted_to_agent",
+      "documents": [
+        "AngularAuthBasicsRef.pdf"
+      ],
+      "submittedDate": "2026-01-28T17:40:21.129Z",
+      "updatedAt": "2026-01-28T17:40:21.129Z",
+      "id": "E6_9QpD"
+    }
+  ],
+  "policies": [
+    {
+      "id": "1",
+      "policyNumber": "POL-2024-001",
+      "applicationId": null,
+      "type": "Auto",
+      "status": "active",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 1200,
+      "coverageAmount": 50000,
+      "startDate": "2024-01-01",
+      "endDate": "2025-01-01",
+      "approvedBy": "1",
+      "approvedDate": "2023-12-28T00:00:00.000Z",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "policyNumber": "POL-2026-8459",
+      "applicationId": "1",
+      "type": "Auto",
+      "status": "active",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 120,
+      "coverageAmount": 25000,
+      "startDate": "2026-01-26",
+      "endDate": "2027-01-26",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-26T09:29:05.082Z",
+      "createdAt": "2026-01-26T09:29:05.082Z",
+      "updatedAt": "2026-01-26T09:29:05.082Z",
+      "id": "YgXBwiw"
+    },
+    {
+      "policyNumber": "POL-2026-7816",
+      "applicationId": "Z-R3l1L",
+      "type": "life",
+      "status": "active",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 800,
+      "coverageAmount": 5000000,
+      "startDate": "2026-01-26",
+      "endDate": "2027-01-26",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-26T09:29:47.372Z",
+      "createdAt": "2026-01-26T09:29:47.372Z",
+      "updatedAt": "2026-01-26T09:29:47.372Z",
+      "id": "r5q07Lt"
+    },
+    {
+      "policyNumber": "POL-2026-4413",
+      "applicationId": "vD2skYU",
+      "type": "life",
+      "status": "active",
+      "customerId": "mraol3D",
+      "customerName": "sasi",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 500,
+      "coverageAmount": 2500000,
+      "startDate": "2026-01-26",
+      "endDate": "2027-01-26",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-26T11:42:53.494Z",
+      "createdAt": "2026-01-26T11:42:53.494Z",
+      "updatedAt": "2026-01-26T11:42:53.494Z",
+      "id": "AHOSCqK"
+    },
+    {
+      "policyNumber": "POL-2026-0536",
+      "applicationId": "gEWdg9k",
+      "type": "auto",
+      "status": "active",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "startDate": "2026-01-27",
+      "endDate": "2027-01-27",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-27T04:11:56.279Z",
+      "createdAt": "2026-01-27T04:11:56.279Z",
+      "updatedAt": "2026-01-27T04:11:56.279Z",
+      "id": "wIcmqgi"
+    },
+    {
+      "policyNumber": "POL-2026-1869",
+      "applicationId": "b5QjEmk",
+      "type": "health",
+      "status": "active",
+      "customerId": "YeMWJG_",
+      "customerName": "srinidhi",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "startDate": "2026-01-27",
+      "endDate": "2027-01-27",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-27T04:20:33.497Z",
+      "createdAt": "2026-01-27T04:20:33.497Z",
+      "updatedAt": "2026-01-27T04:20:33.497Z",
+      "id": "yHCCHrP"
+    },
+    {
+      "policyNumber": "POL-2026-9379",
+      "applicationId": "6SSoEYQ",
+      "type": "health",
+      "status": "active",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "startDate": "2026-01-27",
+      "endDate": "2027-01-27",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-27T07:00:38.055Z",
+      "createdAt": "2026-01-27T07:00:38.055Z",
+      "updatedAt": "2026-01-27T07:00:38.055Z",
+      "id": "S_o8_B2"
+    },
+    {
+      "policyNumber": "POL-2026-9519",
+      "applicationId": "hCgiuxt",
+      "type": "health",
+      "status": "active",
+      "customerId": "5mtn9XD",
+      "customerName": "Hemanth Kumar Veeramachaneni",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "premium": 1200,
+      "coverageAmount": 500000,
+      "startDate": "2026-01-28",
+      "endDate": "2027-01-28",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-28T11:31:18.063Z",
+      "createdAt": "2026-01-28T11:31:18.063Z",
+      "updatedAt": "2026-01-28T11:31:18.063Z",
+      "id": "qgGSaJO"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1",
+      "claimNumber": "CLM-2024-001",
+      "policyId": "1",
+      "policyNumber": "POL-2024-001",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "status": "agent_reviewed",
+      "type": "Accident",
+      "amount": 3500,
+      "description": "Minor accident - rear bumper damage",
+      "incidentDate": "2024-01-15",
+      "documents": [
+        "accident_photos.pdf",
+        "police_report.pdf",
+        "repair_estimate.pdf"
+      ],
+      "filedDate": "2024-01-16T10:00:00.000Z",
+      "agentReviewDate": "2026-01-24T15:26:44.816Z",
+      "agentNotes": "",
+      "adminReviewDate": null,
+      "adminNotes": null,
+      "approvedAmount": null,
+      "approvedBy": null,
+      "approvedDate": null,
+      "createdAt": "2024-01-16T10:00:00.000Z",
+      "updatedAt": "2026-01-24T15:26:44.816Z"
+    },
+    {
+      "policyId": "AHOSCqK",
+      "policyNumber": "POL-2026-4413",
+      "customerId": "mraol3D",
+      "customerName": "sasi",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "type": "Accident",
+      "amount": 40000,
+      "description": "this is sasi claim",
+      "incidentDate": "2026-01-26",
+      "status": "approved",
+      "claimNumber": "CLM-909419",
+      "filedDate": "2026-01-26T11:50:48.622Z",
+      "createdAt": "2026-01-26T11:50:48.622Z",
+      "updatedAt": "2026-01-26T11:54:35.696Z",
+      "id": "6EkqVUn",
+      "approvedAmount": 40000,
+      "adminNotes": "",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-26T11:54:35.696Z"
+    },
+    {
+      "policyId": "1",
+      "policyNumber": "POL-2024-001",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "type": "Accident",
+      "amount": 50000,
+      "description": "this is the test calim",
+      "incidentDate": "2026-01-11",
+      "status": "approved",
+      "claimNumber": "CLM-228079",
+      "filedDate": "2026-01-26T12:21:16.356Z",
+      "createdAt": "2026-01-26T12:21:16.356Z",
+      "updatedAt": "2026-01-27T04:13:02.940Z",
+      "id": "tgMWc7g",
+      "agentNotes": "claim 101",
+      "agentReviewDate": "2026-01-27T04:12:50.153Z",
+      "approvedAmount": 50000,
+      "adminNotes": "",
+      "approvedBy": "1",
+      "approvedDate": "2026-01-27T04:13:02.940Z"
+    },
+    {
+      "policyId": "1",
+      "policyNumber": "POL-2024-001",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "agentId": "2",
+      "agentName": "John Agent",
+      "type": "Accident",
+      "amount": 50000,
+      "description": "calim 101",
+      "incidentDate": "2026-01-08",
+      "status": "pending_agent_review",
+      "claimNumber": "CLM-839917",
+      "filedDate": "2026-01-27T04:12:33.605Z",
+      "createdAt": "2026-01-27T04:12:33.605Z",
+      "updatedAt": "2026-01-27T04:12:33.605Z",
+      "id": "RDigu1l"
+    }
+  ],
+  "agents": [
+    {
+      "id": "1",
+      "userId": "2",
+      "name": "John Agent",
+      "email": "agent@hartford.com",
+      "phone": "+1-555-0101",
+      "licenseNumber": "AGT-12345",
+      "specialization": [
+        "Auto",
+        "Health",
+        "Home"
+      ],
+      "customersCount": 15,
+      "policiesSold": 42,
+      "totalCommission": 125000,
+      "rating": 4.8,
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "userId": "4",
+      "name": "Emily Wilson",
+      "email": "emily.wilson@hartford.com",
+      "phone": "+1-555-0201",
+      "licenseNumber": "AGT-12346",
+      "specialization": [
+        "Life",
+        "Health"
+      ],
+      "customersCount": 22,
+      "policiesSold": 58,
+      "totalCommission": 185000,
+      "rating": 4.9,
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "userId": "3",
+      "name": "Sarah Customer",
+      "email": "customer@example.com",
+      "phone": "+1-555-0102",
+      "address": "123 Main St, Hartford, CT 06103",
+      "dateOfBirth": "1985-05-15",
+      "agentId": null,
+      "agentName": null,
+      "policiesCount": 1,
+      "claimsCount": 1,
+      "totalPremium": 1200,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "paymentNumber": "PAY-2024-001",
+      "type": "premium",
+      "policyId": "1",
+      "policyNumber": "POL-2024-001",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "amount": 1200,
+      "status": "completed",
+      "paymentMethod": "credit_card",
+      "paymentDate": "2024-01-01T00:00:00.000Z",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "paymentNumber": "PAY-2026-1680",
+      "type": "claim_payout",
+      "policyId": "6EkqVUn",
+      "claimId": "6EkqVUn",
+      "customerId": "3",
+      "customerName": "sasi",
+      "amount": 40000,
+      "status": "completed",
+      "paymentMethod": "bank_transfer",
+      "paymentDate": "2026-01-26T11:54:35.711Z",
+      "createdAt": "2026-01-26T11:54:35.711Z",
+      "id": "pjO_vdC"
+    },
+    {
+      "paymentNumber": "PAY-2026-0071",
+      "type": "claim_payout",
+      "policyId": "tgMWc7g",
+      "claimId": "tgMWc7g",
+      "customerId": "3",
+      "customerName": "Sarah Customer",
+      "amount": 50000,
+      "status": "completed",
+      "paymentMethod": "bank_transfer",
+      "paymentDate": "2026-01-27T04:13:02.951Z",
+      "createdAt": "2026-01-27T04:13:02.951Z",
+      "id": "Qt-_N8c"
+    }
+  ],
+  "notifications": [
+    {
+      "userId": "3",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your Auto insurance policy (POL-2026-8459) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-26T09:29:05.129Z",
+      "id": 1
+    },
+    {
+      "userId": "3",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your life insurance policy (POL-2026-7816) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-26T09:29:47.393Z",
+      "id": 2
+    },
+    {
+      "userId": "mraol3D",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your life insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-26T11:41:33.820Z",
+      "id": 3
+    },
+    {
+      "userId": "mraol3D",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your life insurance policy (POL-2026-4413) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-26T11:42:53.527Z",
+      "id": 4
+    },
+    {
+      "userId": "3",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your auto insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-27T04:10:16.673Z",
+      "id": 5
+    },
+    {
+      "userId": "3",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your auto insurance policy (POL-2026-0536) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-27T04:11:56.311Z",
+      "id": 6
+    },
+    {
+      "userId": "YeMWJG_",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your health insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-27T04:19:25.628Z",
+      "id": 7
+    },
+    {
+      "userId": "YeMWJG_",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your health insurance policy (POL-2026-1869) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-27T04:20:33.518Z",
+      "id": 8
+    },
+    {
+      "userId": "3",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your health insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-27T06:59:34.479Z",
+      "id": 9
+    },
+    {
+      "userId": "3",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your health insurance policy (POL-2026-9379) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-27T07:00:38.087Z",
+      "id": 10
+    },
+    {
+      "userId": "3",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your life insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-28T10:00:15.360Z",
+      "id": 11
+    },
+    {
+      "userId": "5mtn9XD",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your life insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-28T11:21:38.640Z",
+      "id": 12
+    },
+    {
+      "userId": "5mtn9XD",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your health insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-28T11:23:08.697Z",
+      "id": 13
+    },
+    {
+      "userId": "5mtn9XD",
+      "title": "Policy Approved & Active",
+      "message": "Congratulations! Your health insurance policy (POL-2026-9519) has been approved and is now active.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-01-28T11:31:18.097Z",
+      "id": 14
+    },
+    {
+      "userId": "5mtn9XD",
+      "title": "New Recommendations Ready",
+      "message": "Your agent John Agent has prepared policy recommendations for your auto insurance request.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-01-28T17:41:10.258Z",
+      "id": 15
+    }
+  ]
+}
