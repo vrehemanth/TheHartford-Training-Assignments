@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-3\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-5\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-5\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +11,20 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-4\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Exercise-3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-3\\Exercise-3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\SalaryCalculator\\SalaryCalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SalaryCalculator\\SalaryCalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-3\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\SalaryCalculator\\SalaryCalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SalaryCalculator\\SalaryCalculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exercise-1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,91 +46,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-5\\Program.cs",
               "RelativeDocumentMoniker": "Exercise-5\\Program.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-5\\Program.cs",
               "RelativeToolTip": "Exercise-5\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T18:26:42.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-4\\Program.cs",
               "RelativeDocumentMoniker": "Exercise-4\\Program.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-4\\Program.cs",
               "RelativeToolTip": "Exercise-4\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAuwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T17:56:42.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Exercise-3.csproj",
-              "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Exercise-3.csproj",
-              "RelativeDocumentMoniker": "Exercise-3\\Exercise-3.csproj",
-              "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Exercise-3.csproj",
-              "RelativeToolTip": "Exercise-3\\Exercise-3.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-31T17:50:57.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "SalaryCalculation.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\SalaryCalculator\\SalaryCalculation.cs",
               "RelativeDocumentMoniker": "SalaryCalculator\\SalaryCalculation.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\SalaryCalculator\\SalaryCalculation.cs",
               "RelativeToolTip": "SalaryCalculator\\SalaryCalculation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T17:46:37.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Program.cs",
               "RelativeDocumentMoniker": "Exercise-3\\Program.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-3\\Program.cs",
               "RelativeToolTip": "Exercise-3\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T17:43:24.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-2\\Program.cs",
               "RelativeDocumentMoniker": "Exercise-2\\Program.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-2\\Program.cs",
               "RelativeToolTip": "Exercise-2\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T17:19:34.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-1\\Program.cs",
               "RelativeDocumentMoniker": "Exercise-1\\Program.cs",
               "ToolTip": "E:\\TheHartford\\.NET-Weekly-Assignments\\Week-5-Assignment\\Exercises\\Exercise-1\\Program.cs",
               "RelativeToolTip": "Exercise-1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T17:09:19.348Z",
               "EditorCaption": ""
