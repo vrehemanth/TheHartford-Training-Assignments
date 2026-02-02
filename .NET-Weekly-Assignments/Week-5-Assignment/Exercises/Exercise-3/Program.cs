@@ -26,7 +26,7 @@ namespace Exercise_3
             string s= Console.ReadLine();
             double.TryParse(s,out double sal);
             double netSal=SalaryCalculation.CalculateNetSalary(sal);
-            Console.WriteLine("Net Salary = " + netSal);
+            Console.WriteLine($"Net Salary = {netSal}");
         }
     }
 }

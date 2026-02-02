@@ -25,7 +25,7 @@ namespace Exercise_1
             for(int i=0; i < n; i++)
             {
                 int runs = i * (i + 1) * (i + 2);
-                Console.Write(runs+" ");
+                Console.Write($"{runs} ");
             }
             Console.WriteLine();
         }
