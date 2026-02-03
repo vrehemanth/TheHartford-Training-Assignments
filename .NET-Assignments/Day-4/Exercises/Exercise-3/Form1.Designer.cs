@@ -178,6 +178,7 @@
             CountryView.TabIndex = 18;
             CountryView.UseCompatibleStateImageBehavior = false;
             CountryView.View = View.List;
+            CountryView.SelectedIndexChanged += CountryView_SelectedIndexChanged;
             // 
             // Form1
             // 
