@@ -3,7 +3,7 @@
 
     Mahi has learnt about the different properties of circles like radius, centre, diameter, circumference ...
     To make the tutorial class on circles more interesƟng, her teacher organises a game.
-    The players will be given 2 circles --- One circle A with radius ra and with central coordinate (xa, ya)
+    The players will be given 2 circles --- One circle A with radius ra and with central coordinate (xa,ya)
     and second circle B with radius rb and with central coordinate (xb, yb).
     The player needs to say
     • B is in A
