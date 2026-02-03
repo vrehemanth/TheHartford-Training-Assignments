@@ -1,4 +1,5 @@
-﻿namespace Distance
+﻿// Distance Converter (out + TryParse)
+namespace Distance
 {
     internal class Program
     {
