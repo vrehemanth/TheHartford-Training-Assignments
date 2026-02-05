@@ -20,8 +20,6 @@ namespace InsuranceLibrary.Models
         public decimal PremiumAmount { get; set; }
         public int PolicyTerm {  get; set; }
         public bool IsActive { get; set; }
-        //CTORs
-
         //override toString()
         public override string ToString()
         {
