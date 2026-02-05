@@ -100,14 +100,12 @@ namespace InsuranceConsoleApp
             }
 
             Console.WriteLine(new string('-', 76));
-            Console.WriteLine(
-                $"| {"ID",-3} | {"Holder Name",-18} | {"Type",-8} | {"Premium",-11} | {"Term (Years)",-12} | {"Active",-6} |");
+            Console.WriteLine($"| {"ID",-3} | {"Holder Name",-18} | {"Type",-8} | {"Premium",-11} | {"Term (Years)",-12} | {"Active",-6} |");
             Console.WriteLine(new string('-', 76));
 
             foreach (var p in policy)
             {
-                Console.WriteLine(
-                    $"| {p.PolicyId,-3} | {p.PolicyHolderName,-18} | {p.PolicyType,-8} | {p.PremiumAmount,-11:F2} | {p.PolicyTerm,-12} | {(p.IsActive ? "Yes" : "No"),-6} |");
+                Console.WriteLine($"| {p.PolicyId,-3} | {p.PolicyHolderName,-18} | {p.PolicyType,-8} | {p.PremiumAmount,-11:F2} | {p.PolicyTerm,-12} | {(p.IsActive ? "Yes" : "No"),-6} |");
             }
 
             Console.WriteLine(new string('-', 76));
