@@ -1,4 +1,4 @@
-﻿namespace Requirement_1
+﻿namespace Requirement_2
 {
     internal class Ticket
     {
@@ -34,12 +34,6 @@
             _ticketNo = ticketNo;
             _parkedTime = parkedTime;
             _cost = cost;
-        }
-
-        // Override ToString() to display ticket number in required format
-        public override string ToString()
-        {
-            return _ticketNo;
         }
     }
 }

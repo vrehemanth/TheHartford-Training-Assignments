@@ -1,4 +1,4 @@
-﻿namespace Requirement_1
+﻿namespace Requirement_4
 {
     internal class Ticket
     {
@@ -28,18 +28,20 @@
             set { _cost = value; }
         }
 
-        // Parameterized constructor to initialize ticket details
+        // Default constructor
+        public Ticket()
+        {
+            _ticketNo = string.Empty;
+            _parkedTime = DateTime.MinValue;
+            _cost = 0.0;
+        }
+
+        // Parameterized constructor
         public Ticket(string ticketNo, DateTime parkedTime, double cost)
         {
             _ticketNo = ticketNo;
             _parkedTime = parkedTime;
             _cost = cost;
-        }
-
-        // Override ToString() to display ticket number in required format
-        public override string ToString()
-        {
-            return _ticketNo;
         }
     }
 }
