@@ -1,5 +1,6 @@
 ﻿namespace Requirement_2
 {
+    // a) Create a Class Vehicle 
     internal class Vehicle
     {
         // Private fields to store Vehicle details
@@ -54,7 +55,7 @@
             _ticket = ticket;
         }
 
-        // Create Vehicle
+        // d) Create Vehicle
         public static Vehicle CreateVehicle(string detail)
         {
             // Split the input string 

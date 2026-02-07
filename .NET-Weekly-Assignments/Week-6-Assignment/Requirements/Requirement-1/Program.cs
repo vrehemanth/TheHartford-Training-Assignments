@@ -1,4 +1,5 @@
 ﻿// ParkingLot - Requirement 1
+
 namespace Requirement_1
 {
     internal class Program
@@ -8,14 +9,15 @@ namespace Requirement_1
         {
             try
             {
+                // 7) The input format consists of Vehicle details separated by comma
                 string[] data = Console.ReadLine().Split(',');
                 string registrationNo = data[0];
                 string name = data[1];
                 string type = data[2];
-                double weight = double.Parse(data[3]);
+                double.TryParse(data[3],out double weight);
                 string ticketNo = data[4];
-                DateTime parkedTime = DateTime.Parse(data[5]);
-                double cost = double.Parse(data[6]);
+                DateTime.TryParse(data[5],out DateTime parkedTime);
+                double.TryParse(data[6],out double cost);
 
                 Ticket ticket = new Ticket(ticketNo, parkedTime, cost);
                 return new Vehicle(registrationNo, name, type, weight, ticket);
@@ -51,7 +53,7 @@ namespace Requirement_1
                 Console.WriteLine(v2);
                 Console.WriteLine();
 
-                // Compare both vehicle objects
+                // 8) Compare both vehicle objects
                 if (v1.Equals(v2))
                     Console.WriteLine("Vehicle 1 is same as Vehicle 2");
                 else

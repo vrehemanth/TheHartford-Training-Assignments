@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Requirement_2
 {
+    // c) Create a Class ParkingLot 
     internal class ParkingLot
     {
         // Private fields to store ParkingLot details
@@ -39,6 +40,7 @@ namespace Requirement_2
             this._vehicleList = new List<Vehicle>();
         }
 
+        // e) Create the following methodsinParkingLot class
         // Add Vehicle
         public void AddVehicleToParkingLot(Vehicle vehicle)
         {

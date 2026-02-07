@@ -1,12 +1,14 @@
-﻿using System.Text.RegularExpressions;
+﻿// Parking Lot - Requirement-3
 
+using System.Text.RegularExpressions;
 namespace Requirement_3
 {
     internal class Program
     {
+        // a) ValidateRegistrationNo Method
         static bool ValidateRegistrationNo(string registrationNo)
         {
-            // Regex 
+            // b) Regex (Rules)
             string pattern = @"^[A-Z]{2}\s\d{1,2}(\s[A-Z]{1,2})?\s\d{1,4}$";
 
             return Regex.IsMatch(registrationNo, pattern);

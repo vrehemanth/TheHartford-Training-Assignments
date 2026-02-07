@@ -1,5 +1,6 @@
 ﻿namespace Requirement_1
 {
+    // 2) Create a Ticket Class 
     internal class Ticket
     {
         // Private field to store ticket details
@@ -7,28 +8,30 @@
         private DateTime _parkedTime;
         private double _cost;
 
-        // Public property to get/set ticket number
-        public string TicketNo
-        {
-            get { return _ticketNo; }
-            set { _ticketNo = value; }
-        }
+        // 3) Create / Generate appropriate Properties
 
-        // Public property to get/set parked time
-        public DateTime ParkedTime
-        {
-            get { return _parkedTime; }
-            set { _parkedTime = value; }
-        }
+            // Public property to get/set ticket number
+            public string TicketNo
+            {
+                get { return _ticketNo; }
+                set { _ticketNo = value; }
+            }
 
-        // Public property to get/set parking cost
-        public double Cost
-        {
-            get { return _cost; }
-            set { _cost = value; }
-        }
+            // Public property to get/set parked time
+            public DateTime ParkedTime
+            {
+                get { return _parkedTime; }
+                set { _parkedTime = value; }
+            }
 
-        // Parameterized constructor to initialize ticket details
+            // Public property to get/set parking cost
+            public double Cost
+            {
+                get { return _cost; }
+                set { _cost = value; }
+            }
+
+        // 4) Parameterized constructor to initialize ticket details
         public Ticket(string ticketNo, DateTime parkedTime, double cost)
         {
             _ticketNo = ticketNo;
@@ -36,7 +39,7 @@
             _cost = cost;
         }
 
-        // Override ToString() to display ticket number in required format
+        // 5) Override ToString() to display ticket number in required format
         public override string ToString()
         {
             return _ticketNo;
