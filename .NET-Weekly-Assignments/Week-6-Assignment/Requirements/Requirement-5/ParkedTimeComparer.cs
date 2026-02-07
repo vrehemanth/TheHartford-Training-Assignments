@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Requirement_5
 {
+    // e) Create a class parkedTimeComparer which implements IComparer interface
     internal class ParkedTimeComparer : IComparer<Vehicle>
     {
         // Compare vehicles based on ParkedTime

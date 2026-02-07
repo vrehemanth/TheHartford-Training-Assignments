@@ -1,5 +1,6 @@
 ﻿namespace Requirement_5
 {
+    // c) Create a Class Ticket
     internal class Ticket
     {
         // Private field to store ticket details

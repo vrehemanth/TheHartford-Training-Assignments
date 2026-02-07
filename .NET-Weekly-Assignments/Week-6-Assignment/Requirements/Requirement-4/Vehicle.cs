@@ -1,7 +1,9 @@
 ﻿using System.Net.Sockets;
+using System.Security.Claims;
 
 namespace Requirement_4
 {
+    // a) Create a Class Vehicle
     internal class Vehicle
     {
         // Private fields to store Vehicle details

@@ -1,5 +1,8 @@
-﻿namespace Requirement_6
+﻿using System.Security.Claims;
+
+namespace Requirement_6
 {
+    // a) Create a Class Vehicle
     internal class Vehicle
     {
         // Private fields to store Vehicle details
@@ -54,6 +57,7 @@
             _weight = weight;
         }
 
+        // b) Create the following static method in Vehicle class,
         // Create Vehicle
         public static Vehicle CreateVehicle(string detail)
         {

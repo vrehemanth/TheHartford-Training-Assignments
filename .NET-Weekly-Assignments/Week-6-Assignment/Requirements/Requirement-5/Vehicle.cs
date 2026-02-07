@@ -1,6 +1,7 @@
 ﻿namespace Requirement_5
 {
-    internal class Vehicle : IComparable<Vehicle>
+    // a) Create a Class Vehicle
+    internal class Vehicle : IComparable<Vehicle> // d) The Vehicle class should implement the IComparable interface
     {
         // Private fields to store Vehicle details
         private string _registrationNo;
@@ -54,7 +55,7 @@
             _ticket = ticket;
         }
 
-        // Create Vehicle
+        // b) Create Vehicle
         public static Vehicle CreateVehicle(string detail)
         {
             // Split the input string 

@@ -1,5 +1,8 @@
-﻿namespace Requirement_4
+﻿using System.Security.Claims;
+
+namespace Requirement_4
 {
+    // b) Create a Class Ticket
     internal class Ticket
     {
         // Private field to store ticket details
