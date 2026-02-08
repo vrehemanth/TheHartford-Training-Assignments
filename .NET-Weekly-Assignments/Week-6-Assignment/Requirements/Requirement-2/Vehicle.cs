@@ -46,7 +46,7 @@
         }
 
         // Parameterized constructor to initialize all vehicle attributes
-        public Vehicle(string? registrationNo, string? name, string? type, double weight, Ticket ticket)
+        public Vehicle(string? registrationNo, string? name, string? type, Double weight, Ticket ticket)
         {
             _registrationNo = registrationNo;
             _name = name;
@@ -65,12 +65,12 @@
             string registrationNo = data[0];
             string name = data[1];
             string type = data[2];
-            double weight = double.Parse(data[3]);
+            Double.TryParse(data[3],out Double weight);
 
             // Ticket details
             string ticketNo = data[4];
             DateTime parkedTime = DateTime.Parse(data[5]);
-            double cost = double.Parse(data[6]);
+            Double.TryParse(data[6],out Double cost);
 
             // Create Ticket object
             Ticket ticket = new Ticket(ticketNo, parkedTime, cost);

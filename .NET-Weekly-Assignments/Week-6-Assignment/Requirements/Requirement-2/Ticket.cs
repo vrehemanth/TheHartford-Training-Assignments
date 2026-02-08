@@ -30,7 +30,7 @@
         }
 
         // Parameterized constructor to initialize ticket details
-        public Ticket(string ticketNo, DateTime parkedTime, double cost)
+        public Ticket(string ticketNo, DateTime parkedTime, Double cost)
         {
             _ticketNo = ticketNo;
             _parkedTime = parkedTime;
