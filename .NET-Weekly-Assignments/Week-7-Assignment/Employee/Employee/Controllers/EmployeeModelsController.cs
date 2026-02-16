@@ -1,14 +1,7 @@
 ﻿using Employee.DTOs;
 using Employee.Models;
-using Humanizer;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Employee.Controllers
 {
@@ -16,8 +9,10 @@ namespace Employee.Controllers
     [ApiController]
     public class EmployeeModelsController : ControllerBase
     {
+        // EF Core DbContext for database operations
         private readonly EmployeeContext _context;
 
+        // Constructor injection of DbContext (Dependency Injection)
         public EmployeeModelsController(EmployeeContext context)
         {
             _context = context;
@@ -27,6 +22,8 @@ namespace Employee.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ReadEmployeesDTO>>> GetEmployees()
         {
+            // Include Department
+            // Select maps entity to DTO
             var employees = await _context.Employees
             .Include(e => e.Department)
             .Select(e => new ReadEmployeesDTO
@@ -35,6 +32,7 @@ namespace Employee.Controllers
                 Name = e.Name,
                 Salary = e.Salary,
                 IsActive = e.IsActive,
+                // Department info from navigation property
                 DepartmentId = e.Department!.Id,
                 DepartmentName = e.Department.DeptName
             })
@@ -43,10 +41,11 @@ namespace Employee.Controllers
             return Ok(employees);
         }
 
-        // GET: api/EmployeeModels/5
+        // GET: api/EmployeeModels/id
         [HttpGet("{Id}")]
         public async Task<ActionResult<ReadEmployeesDTO>> GetEmployeeById(long Id)
         {
+            // Query employee by Id
             var employee = await _context.Employees
             .Include(e => e.Department)
             .Where(e => e.Id == Id)
@@ -61,6 +60,7 @@ namespace Employee.Controllers
             })
             .FirstOrDefaultAsync();
 
+            // If employee not found 
             if (employee == null)
             {
                 return NotFound($"Employee with EmpId {Id} not found.");
@@ -74,20 +74,27 @@ namespace Employee.Controllers
         [HttpPost]
         public async Task<ActionResult<EmployeeModel>> PostEmployeeModel(CreateEmployeeDTO dto)
         {
+            // Find department by name
             var department = await _context.Departments
             .FirstOrDefaultAsync(d => d.DeptName == dto.DepartmentName);
+
+            // If department not found
             if (department == null)
             {
                 return BadRequest($"Department '{dto.DepartmentName}' not found.");
             }
+
+            // Generate next Employee Id manually
             long nextEmpId = (await _context.Employees.AnyAsync())
             ? await _context.Employees.MaxAsync(e => e.Id) + 1 : 1;
+
             var employee = new EmployeeModel
             {
                 Id = nextEmpId,
                 Name = dto.Name,
                 Salary = dto.Salary,
                 IsActive = dto.IsActive,
+                // Foreign key linking to Department
                 DepartmentId = department.Id
             };
 
@@ -105,14 +112,16 @@ namespace Employee.Controllers
             });
         }
 
-        // PUT: api/EmployeeModels/5
+        // PUT: api/EmployeeModels/id
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{Id}")]
         public async Task<IActionResult> PutEmployee(int Id, CreateEmployeeDTO dto)
         {
+            // Find employee by Id
             var employee = await _context.Employees
                 .FirstOrDefaultAsync(e => e.Id == Id);
 
+            // If employee not found
             if (employee == null)
             {
                 return NotFound($"Employee with EmpId {Id} not found.");
@@ -138,33 +147,40 @@ namespace Employee.Controllers
             return Ok("Updation Successful");
         }
 
-        // PATCH: api/EmployeeModels
+        // PATCH: api/EmployeeModels/id
         [HttpPatch("{Id}")]
         public async Task<IActionResult> UpdateSalary(long Id, UpdateSalaryDTO dto)
         {
+            // Find employee by Id
             var employee = await _context.Employees.FindAsync(Id);
 
+            // If employee not found
             if (employee == null)
             {
                 return NotFound($"Employee with Id {Id} not found.");
             }
 
+            //Update Salary
             employee.Salary = dto.Salary;
 
             await _context.SaveChangesAsync();
 
             return Ok("Salary Updation Successfully");
         }
-        // DELETE: api/EmployeeModels/5
+        // DELETE: api/EmployeeModels/id
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployeeModel(long id)
         {
+            // Find employee by Id
             var employeeModel = await _context.Employees.FindAsync(id);
+
+            // If employee not found
             if (employeeModel == null)
             {
                 return NotFound();
             }
 
+            // Remove employee
             _context.Employees.Remove(employeeModel);
             await _context.SaveChangesAsync();
 
