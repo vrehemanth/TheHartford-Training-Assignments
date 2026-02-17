@@ -1,0 +1,6 @@
+@EFSeedingDemo_HostAddress = http://localhost:5267
+
+GET {{EFSeedingDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
