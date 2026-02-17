@@ -1,0 +1,49 @@
+# Build results
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code (optional but good)
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# ASP.NET Core
+appsettings.Development.json
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Generated files
+*.cache
+*.pdb
+*.mdb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+TestResults/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# IIS Express
+IISExpress/
+
+# Dotnet CLI
+project.assets.json
+project.nuget.cache
