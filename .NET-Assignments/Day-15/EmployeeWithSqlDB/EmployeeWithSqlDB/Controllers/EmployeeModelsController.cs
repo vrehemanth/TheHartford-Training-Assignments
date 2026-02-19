@@ -8,7 +8,7 @@ namespace Employee.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeModelsController : ControllerBase
+    public class EmployeeModelsController :ControllerBase
     {
         private readonly IEmployeeRepository _repo;
 

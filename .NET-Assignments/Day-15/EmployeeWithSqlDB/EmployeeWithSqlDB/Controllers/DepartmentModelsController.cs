@@ -7,7 +7,7 @@ namespace Employee.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DepartmentModelsController : ControllerBase
+    public class DepartmentModelsController :ControllerBase
     {
         private readonly IDepartmentRepository _repo;
 
