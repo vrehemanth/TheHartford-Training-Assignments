@@ -1,0 +1,6 @@
+@EmployeeWithSqlDB_HostAddress = http://localhost:5155
+
+GET {{EmployeeWithSqlDB_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
