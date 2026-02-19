@@ -9,7 +9,7 @@ namespace AAApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController :ControllerBase
     {
         private readonly UserContext _context;
 
