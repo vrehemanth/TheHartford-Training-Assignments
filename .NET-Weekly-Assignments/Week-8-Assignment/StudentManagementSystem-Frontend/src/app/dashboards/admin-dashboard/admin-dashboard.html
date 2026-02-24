@@ -1,0 +1,209 @@
+<app-navbar></app-navbar>
+
+<div class="p-6 bg-slate-100 min-h-screen">
+
+  <!-- ================= HEADER ================= -->
+  <div
+    class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-opacity-50">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">Admin <span
+          class="text-gradient">Dashboard</span></h1>
+      <p class="text-slate-500 text-sm mt-1 font-medium">
+        Monitor and manage the Student Management System
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= STATS ================= -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+
+    <div class="premium-card">
+      <p class="card-label">Students</p>
+      <h2>{{ stats.totalStudents }}</h2>
+    </div>
+
+    <div class="premium-card">
+      <p class="card-label">Trainers</p>
+      <h2>{{ stats.totalTrainers }}</h2>
+    </div>
+
+    <div class="premium-card">
+      <p class="card-label">Materials</p>
+      <h2>{{ stats.totalMaterials }}</h2>
+    </div>
+
+    <div class="premium-card">
+      <p class="card-label">Feedback</p>
+      <h2>{{ stats.totalFeedbacks }}</h2>
+    </div>
+
+  </div>
+
+  <!-- ================= RECENT STUDENTS ================= -->
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mt-8">
+
+    <h2 class="text-xl font-bold text-slate-800 mb-6">
+      Recently Registered Students
+    </h2>
+
+    <table class="premium-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td class="font-medium text-slate-800">{{ student.fullName }}</td>
+          <td>{{ student.email }}</td>
+          <td><span class="role-badge">{{ student.course || 'Not Assigned' }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- ================= TRAINERS MANAGEMENT ================= -->
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 mt-8 p-8">
+
+    <h2 class="text-xl font-bold text-slate-800 mb-6">
+      Trainers
+    </h2>
+
+    <table class="premium-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let trainer of trainers">
+          <td class="font-medium text-slate-800">{{ trainer.fullName }}</td>
+          <td>{{ trainer.email }}</td>
+          <td class="text-right">
+            <button (click)="removeTrainer(trainer.id)"
+              class="px-4 py-1.5 text-xs font-bold text-red-600 bg-red-50 rounded-lg hover:bg-red-100 transition duration-200">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- ================= STUDENTS MANAGEMENT ================= -->
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 mt-8 p-8">
+
+    <h2 class="text-xl font-bold text-slate-800 mb-6">
+      Students
+    </h2>
+
+    <table class="premium-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Assigned Trainer</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td class="font-medium text-slate-800">{{ student.fullName }}</td>
+          <td>{{ student.email }}</td>
+          <td>
+            <span
+              [class]="student.trainerName ? 'role-badge bg-green-50 text-green-700' : 'role-badge bg-slate-100 text-slate-500'">
+              {{ student.trainerName || 'Not Assigned' }}
+            </span>
+          </td>
+          <td class="text-right flex justify-end gap-3 py-4">
+            <button (click)="viewFeedback(student)"
+              class="px-4 py-1.5 text-xs font-bold text-indigo-600 bg-indigo-50 rounded-lg hover:bg-indigo-100 transition duration-200">
+              Feedback
+            </button>
+            <button (click)="removeStudent(student.id)"
+              class="px-4 py-1.5 text-xs font-bold text-red-600 bg-red-50 rounded-lg hover:bg-red-100 transition duration-200">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- ================= ASSIGN TRAINER ================= -->
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 mt-8 p-8 max-w-4xl mx-auto">
+
+    <h2 class="text-xl font-bold text-slate-800 mb-6">
+      Assign Trainer to Student
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Trainer Dropdown -->
+      <div>
+        <label class="label">Select Trainer</label>
+        <select [(ngModel)]="selectedTrainerId" class="input-modern mt-1 bg-slate-50 cursor-pointer">
+          <option value="">Choose Trainer</option>
+          <option *ngFor="let trainer of trainers" [value]="trainer.id">
+            {{ trainer.fullName }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Student Dropdown -->
+      <div>
+        <label class="label">Select Student</label>
+        <select [(ngModel)]="selectedStudentId" class="input-modern mt-1 bg-slate-50 cursor-pointer">
+          <option value="">Choose Student</option>
+          <option *ngFor="let student of students" [value]="student.id">
+            {{ student.fullName }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-end">
+      <button class="btn-primary px-8" (click)="assignTrainer()">
+        Assign Trainer
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ===================== -->
+<!-- FEEDBACK MODAL -->
+<!-- ===================== -->
+<div *ngIf="showFeedbackModal" class="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg w-full max-w-lg p-6 max-h-[80vh] overflow-y-auto">
+
+    <div class="flex justify-between items-center border-b pb-3 mb-4">
+      <h2 class="text-xl font-bold text-gray-800">Feedback for {{ selectedStudentForFeedback?.fullName }}</h2>
+      <button (click)="closeFeedbackModal()"
+        class="text-gray-500 hover:text-gray-800 text-2xl leading-none">&times;</button>
+    </div>
+
+    <div *ngIf="studentFeedbacks.length === 0" class="text-sm text-gray-500 py-4 text-center">
+      No feedback found for this student.
+    </div>
+
+    <div *ngFor="let f of studentFeedbacks" class="mb-4 bg-gray-50 p-4 rounded-lg border text-sm text-gray-700">
+      <p class="font-semibold text-indigo-600 mb-1">From Trainer: {{ f.trainerName }}</p>
+      <p class="mb-2 text-gray-800">{{ f.comments }}</p>
+      <p class="text-xs text-gray-400 text-right">{{ f.createdAt | date:'medium' }}</p>
+    </div>
+
+    <div class="mt-6 flex justify-end">
+      <button (click)="closeFeedbackModal()"
+        class="px-5 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">Close</button>
+    </div>
+  </div>
+</div>

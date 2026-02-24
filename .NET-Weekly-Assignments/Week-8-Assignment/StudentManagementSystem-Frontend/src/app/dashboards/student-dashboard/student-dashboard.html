@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+
+<div class="p-6 bg-slate-50 min-h-screen">
+
+  <!-- ================= HEADER ================= -->
+  <div
+    class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-opacity-50">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">Student <span
+          class="text-gradient">Dashboard</span></h1>
+      <p class="text-slate-500 text-sm mt-1 font-medium">
+        Access your materials and view trainer feedback
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+
+    <!-- ===================== -->
+    <!-- STUDY MATERIALS -->
+    <!-- ===================== -->
+    <div
+      class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-lg transition duration-300">
+
+      <div class="p-6 border-b border-slate-100 bg-indigo-50/30">
+        <h2 class="text-lg font-bold text-slate-800">
+          Study Materials
+        </h2>
+      </div>
+
+      <!-- Empty State -->
+      <div *ngIf="materials.length === 0" class="p-8 text-slate-400 text-sm italic text-center">
+        No materials available assigned to you at the moment.
+      </div>
+
+      <!-- Material List -->
+      <div class="divide-y divide-slate-100">
+        <div *ngFor="let m of materials" class="p-6 hover:bg-slate-50 transition duration-150">
+
+          <h3 class="font-bold text-slate-800 text-lg mb-1">
+            {{ m.title }}
+          </h3>
+
+          <p class="text-sm text-slate-500 mb-4 line-clamp-2">
+            {{ m.description }}
+          </p>
+
+          <a [href]="m.link" target="_blank"
+            class="inline-flex items-center gap-1 text-indigo-600 text-sm font-semibold hover:text-indigo-800 transition">
+            Open Material
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ===================== -->
+    <!-- TRAINER FEEDBACK -->
+    <!-- ===================== -->
+    <div
+      class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-lg transition duration-300">
+
+      <div class="p-6 border-b border-slate-100 bg-purple-50/30">
+        <h2 class="text-lg font-bold text-slate-800">Trainer Feedback</h2>
+      </div>
+
+      <div *ngIf="feedbacks.length === 0" class="p-8 text-slate-400 text-sm italic text-center">
+        No feedback received yet. Keep up the good work!
+      </div>
+
+      <div class="divide-y divide-slate-100">
+        <div *ngFor="let f of feedbacks"
+          class="p-6 bg-gradient-to-r hover:from-slate-50 hover:to-white transition duration-150">
+
+          <p class="text-slate-700 leading-relaxed italic mb-3">
+            "{{ f.comments }}"
+          </p>
+
+          <p class="text-xs text-slate-400 font-medium tracking-wide">
+            {{ f.createdAt | date:'longDate' }} at {{ f.createdAt | date:'shortTime' }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
+  <div class="text-xl font-bold text-indigo-600">SMS Portal</div>
+
+  <div class="flex gap-4 items-center">
+    <a routerLink="/admin" *ngIf="role==='Admin'" class="nav-link">Admin</a>
+    <a routerLink="/trainer" *ngIf="role==='Trainer'" class="nav-link">Trainer</a>
+    <a routerLink="/student" *ngIf="role==='Student'" class="nav-link">Student</a>
+
+    <button (click)="logout()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+      Logout
+    </button>
+  </div>
+</nav>

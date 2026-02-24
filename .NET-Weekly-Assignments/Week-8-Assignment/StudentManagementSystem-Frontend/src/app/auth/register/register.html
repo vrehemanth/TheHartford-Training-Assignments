@@ -1,0 +1,130 @@
+<div
+  class="min-h-screen bg-slate-50 flex items-center justify-center p-6 py-12 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-opacity-50">
+
+  <div class="relative w-full max-w-xl">
+
+    <!-- Header -->
+    <div class="text-center mb-8 animate-fade-in">
+      <div
+        class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-600 shadow-lg shadow-indigo-500/30 mb-6">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+        </svg>
+      </div>
+      <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight">Create <span
+          class="text-gradient">Account</span></h1>
+      <p class="text-slate-500 text-sm mt-2 font-medium">Join the Student Management System today</p>
+    </div>
+
+    <!-- Card -->
+    <div
+      class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-8 sm:p-10 animate-scale-in">
+
+      <!-- ✅ ERROR MESSAGE -->
+      <div *ngIf="error"
+        class="bg-red-50 text-red-600 px-4 py-3 rounded-xl text-sm font-medium border border-red-100 mb-6">
+        {{ error }}
+      </div>
+
+      <form (ngSubmit)="register()" class="space-y-5">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label class="label">Full Name</label>
+            <input [(ngModel)]="registerForm.fullName" name="fullName" required
+              class="input-modern bg-slate-50 hover:bg-slate-100 transition-colors" placeholder="John Doe">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="label">Email Address</label>
+            <input [(ngModel)]="registerForm.email" name="email" required
+              class="input-modern bg-slate-50 hover:bg-slate-100 transition-colors" placeholder="name@company.com">
+          </div>
+        </div>
+
+        <div class="space-y-1.5">
+          <label class="label">Password</label>
+          <input type="password" [(ngModel)]="registerForm.password" name="password" required
+            class="input-modern bg-slate-50 hover:bg-slate-100 transition-colors" placeholder="••••••••">
+        </div>
+
+        <hr class="border-slate-100 my-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- ✅ ROLE -->
+          <div class="space-y-1.5">
+            <label class="label">I am a</label>
+            <select [(ngModel)]="registerForm.userRole" name="userRole"
+              class="input-modern bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors">
+              <option value="Student">Student</option>
+              <option value="Trainer">Trainer</option>
+            </select>
+          </div>
+
+          <!-- ✅ STUDENT → COURSE -->
+          <div *ngIf="registerForm.userRole === 'Student'" class="space-y-1.5">
+            <label class="label">Course Enrollment</label>
+            <select [(ngModel)]="registerForm.course" name="course" required
+              class="input-modern bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors">
+              <option value="">Select Course</option>
+              <option *ngFor="let course of courses" [value]="course">{{ course }}</option>
+            </select>
+          </div>
+
+          <!-- ✅ TRAINER → EXPERTISE -->
+          <div *ngIf="registerForm.userRole === 'Trainer'" class="space-y-1.5">
+            <label class="label">Area of Expertise</label>
+            <input [(ngModel)]="registerForm.expertise" name="expertise" required
+              class="input-modern bg-slate-50 hover:bg-slate-100 transition-colors" placeholder="e.g. Angular, .NET">
+          </div>
+        </div>
+
+        <hr class="border-slate-100 my-6">
+
+        <!-- ✅ SECURITY QUESTION -->
+        <div class="space-y-1.5">
+          <label class="label">Security Question <span class="text-slate-400 font-normal">(For Password
+              Recovery)</span></label>
+          <select [(ngModel)]="registerForm.securityQuestion" name="securityQuestion" required
+            class="input-modern bg-slate-50 cursor-pointer hover:bg-slate-100 transition-colors">
+            <option value="">Select a security question</option>
+            <option *ngFor="let q of securityQuestions" [value]="q">{{ q }}</option>
+          </select>
+        </div>
+
+        <div class="space-y-1.5">
+          <label class="label">Security Answer</label>
+          <input [(ngModel)]="registerForm.securityAnswer" name="securityAnswer" required
+            class="input-modern bg-slate-50 hover:bg-slate-100 transition-colors" placeholder="Your secret answer">
+        </div>
+
+        <!-- ✅ BUTTON -->
+        <button type="submit"
+          class="w-full py-3.5 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-indigo-600/30 transition-all transform hover:-translate-y-0.5 mt-8"
+          [disabled]="loading">
+          <span *ngIf="!loading">Create Account</span>
+          <span *ngIf="loading" class="flex items-center justify-center gap-2">
+            <svg class="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none">
+              </circle>
+              <path class="opacity-75" fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+              </path>
+            </svg>
+            Registering...
+          </span>
+        </button>
+
+      </form>
+
+    </div>
+
+    <p class="text-center text-sm text-slate-500 font-medium mt-8 mb-8">
+      Already have an account?
+      <a routerLink="/login" class="text-indigo-600 hover:text-indigo-800 font-bold transition-colors ml-1">Sign in
+        here</a>
+    </p>
+
+  </div>
+</div>
