@@ -1,0 +1,6 @@
+@Disaster.WebAPI_HostAddress = http://localhost:5261
+
+GET {{Disaster.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
