@@ -19,6 +19,7 @@ namespace EmergencyService.Infrastructure.Persistence
                 entity.Property(e => e.Location).HasMaxLength(200);
                 entity.Property(e => e.Status).HasMaxLength(50);
                 entity.Property(e => e.ResponderId).HasMaxLength(100);
+                entity.Property(e => e.HospitalId);
             });
         }
     }

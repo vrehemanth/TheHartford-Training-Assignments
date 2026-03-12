@@ -41,7 +41,7 @@ namespace HospitalService.WebAPI.Controllers
         }
 
         [HttpPatch("{id}/beds")]
-        [Authorize(Roles = "Hospital")]
+        [Authorize(Roles = "Hospital,Responder")]
         public async Task<IActionResult> UpdateBeds(int id, UpdateBedsRequest request)
         {
             try

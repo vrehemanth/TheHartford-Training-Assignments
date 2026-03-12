@@ -8,6 +8,7 @@ using System.Text;
 using EmergencyService.Application.Common.Interfaces;
 using EmergencyService.Application.Services;
 using EmergencyService.Infrastructure.Persistence;
+using EmergencyService.Infrastructure.ExternalServices;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -23,6 +24,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<EmergencyDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IEmergencyRepository, EmergencyRepository>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient<IHospitalClient, HospitalClient>();
 
 // Application
 builder.Services.AddScoped<EmergencyLogic>();

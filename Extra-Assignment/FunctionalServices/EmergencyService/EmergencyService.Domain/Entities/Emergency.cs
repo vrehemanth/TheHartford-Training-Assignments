@@ -8,6 +8,7 @@ namespace EmergencyService.Domain.Entities
         public string? Location { get; set; }
         public string Status { get; set; } = "Pending";
         public string? ResponderId { get; set; }
+        public int? HospitalId { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

@@ -7,10 +7,37 @@ namespace EmergencyService.Application.Services
     public class EmergencyLogic
     {
         private readonly IEmergencyRepository _repository;
+        private readonly IHospitalClient _hospitalClient;
 
-        public EmergencyLogic(IEmergencyRepository repository)
+        public EmergencyLogic(IEmergencyRepository repository, IHospitalClient hospitalClient)
         {
             _repository = repository;
+            _hospitalClient = hospitalClient;
+        }
+
+        public async Task AssignHospitalAsync(int emergencyId, int hospitalId)
+        {
+            var emergency = await _repository.GetByIdAsync(emergencyId);
+            if (emergency == null) throw new KeyNotFoundException("Emergency not found.");
+
+            // 1. Check if hospital has beds via direct connection
+            var isAvailable = await _hospitalClient.CheckHospitalAvailabilityAsync(hospitalId);
+            if (!isAvailable)
+            {
+                throw new InvalidOperationException("The selected hospital has no available beds.");
+            }
+
+            // 2. Reserve a bed via direct connection
+            var reserved = await _hospitalClient.ReserveBedAsync(hospitalId);
+            if (!reserved)
+            {
+                throw new InvalidOperationException("Failed to reserve a bed at the selected hospital.");
+            }
+
+            // 3. Update the emergency record
+            emergency.HospitalId = hospitalId;
+            emergency.Status = "En Route to Hospital";
+            await _repository.UpdateAsync(emergency);
         }
 
         public async Task ReportAsync(ReportEmergencyRequest request, string victimId)

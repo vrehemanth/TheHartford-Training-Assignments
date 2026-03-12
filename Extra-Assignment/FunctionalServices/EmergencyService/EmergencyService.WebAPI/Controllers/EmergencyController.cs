@@ -34,7 +34,7 @@ namespace EmergencyService.WebAPI.Controllers
             }
         }
 
-        [HttpPut("accept/{id}")]
+        [HttpPatch("accept/{id}")]
         [Authorize(Roles = "Responder")]
         public async Task<IActionResult> Accept(int id)
         {
@@ -59,7 +59,7 @@ namespace EmergencyService.WebAPI.Controllers
             return Ok(emergencies);
         }
 
-        [HttpPatch("{id}")]
+        [HttpPut("{id}")]
         [Authorize(Roles = "Victim,Responder")]
         public async Task<IActionResult> Update(int id, UpdateEmergencyRequest request)
         {
@@ -75,6 +75,25 @@ namespace EmergencyService.WebAPI.Controllers
             var result = await _logic.DeleteAsync(id);
             if (!result) return NotFound("Emergency not found");
             return Ok("Emergency deleted successfully");
+        }
+
+        [HttpPost("{id}/assign-hospital/{hospitalId}")]
+        [Authorize(Roles = "Responder")]
+        public async Task<IActionResult> AssignHospital(int id, int hospitalId)
+        {
+            try
+            {
+                await _logic.AssignHospitalAsync(id, hospitalId);
+                return Ok($"Hospital {hospitalId} assigned to emergency {id} and bed reserved.");
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
